@@ -1,0 +1,55 @@
+<!-- "CYBER" banner: CC-BY-NC fnordeingang e.V. -->
+<!DOCTYPE html>
+<html
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Slow.OBiN.kr</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<script>
+	function load()
+	{
+		var b1 = document.getElementById("startbtn");
+		var b2 = document.getElementById("startbtn2");
+		
+		b1.hidden = true;
+		b2.hidden = false;
+	}
+	</script>
+</head>
+
+<body style="text-align: center;">
+<style> @-webkit-keyframes backgroundScroll {from {background-position: 0 0;} to {background-position: -277px 0;} } @keyframes backgroundScroll {from {background-position: 0 0;} to {background-position: -277px 0;} }; </style>
+<div style="background-image: url('cyber_plain.png'); background-repeat: repeat-x; background-size: contain;  height: 100px; -webkit-animation: backgroundScroll 10s linear infinite; animation: backgroundScroll 10s linear infinite; -ms-transform: rotate(2deg); /* IE 9 */ -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */ transform: rotate(2deg); position: fixed; width: 100%; margin-top: 10px; "></div>
+
+<div class="container bg-light">
+    <div class="jumbotron text-center">
+        <h3>Welcome to</h3>
+        <h1>Slow.OBiN.kr</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-primary" onclick="javascript:load()" id="startbtn">Start</button>
+			<button class="btn btn-primary" disabled hidden id="startbtn2">
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+  </button>
+        </div>
+    </div>
+</div>
+
+<footer class="container bg-dark">
+    <div class="text-light">
+        <p>
+            Designed & built by <a href="https://dev.OBiN.kr/">dev.OBiN.kr</a> (<a href="https://twitter.com/devOBiNkr/">Twitter</a>)<br />
+			"CYBER" banner: CC-BY-NC <a href="https://cyber.equipment/">fnordeingang e.V.</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
